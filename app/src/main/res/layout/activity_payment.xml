@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewPaymentTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupPaymentOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewPaymentTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioDebit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debit" />
+
+        <RadioButton
+            android:id="@+id/radioCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit" />
+
+        <RadioButton
+            android:id="@+id/radioInterac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interac" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonProceedPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Payment"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupPaymentOptions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        app:srcCompat="@drawable/_621334182557" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Grocery Store App</string>
+    <string name="grocery_item_image_description">Description of grocery item</string>
+    <string name="register">Register</string>
+    <string name="go_to_login">Go to Login</string>
+    <string name="welcome_to_the_grocery_store_app">Welcome to the Grocery Store App!</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="supermarket_logo">Supermarket logo</string>
+    <string name="fruits">fruits</string>
+    <string-array name="payment_options">
+        <item>Debit</item>
+        <item>Credit</item>
+        <item>Interac</item>
+    </string-array>
+</resources>
